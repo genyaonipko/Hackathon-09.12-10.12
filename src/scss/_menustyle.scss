@@ -12,6 +12,7 @@ header {
     height: 80vh;
     background-color: white;
     margin-left: -15px;
+
 }
 
 .navigation-item__head {
@@ -30,6 +31,12 @@ header {
 
 .navbar:hover > .navigation-item {
     display: block;
+    animation: bounce 0.5s ease;
+}
+
+@keyframes bounce {
+    from {left: -200px}
+    to {left: 15px}
 }
 
 .logo {
