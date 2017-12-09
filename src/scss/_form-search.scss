@@ -1,0 +1,30 @@
+
+main .wrapper{
+  margin:0 auto;
+  box-sizing: border-box;
+  width: 100%;
+  min-width: 320px;
+}
+form{
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+  select{
+    margin-bottom: 15px;
+  }
+}
+.button{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  a{
+    display: block;
+    padding: 5px 20px;
+    text-decoration: none;
+    background: #deefff;
+    background: linear-gradient(top, #ee6e22 0%, #de7119 100%);
+    border-radius: 5px;
+    font: 12px/1 Arial, sans-serif;
+    color: #ffffff;
+  }
+}
