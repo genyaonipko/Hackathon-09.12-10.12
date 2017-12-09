@@ -1,2 +1,13 @@
-@import "example1";
-@import "example2";
+*{
+    padding: 0px;
+    margin: 0px;
+}
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+  }
+@import "cabinet.scss";
