@@ -1,17 +1,42 @@
-.list {
-    display: flex;
-    justify-content: space-between;
+nav {
+    width: 100vw;
+    height: 70px;
+    background-color: #3F51B5;
+}
+
+.navigation-item {
+    display: none;
+    position: absolute;
+    top: 70px;
+    width: 100vw;
+    height: 80vh;
+    padding: 10px;
+    background-color: grey;
+    margin-left: -15px;
+}
+
+.topmenu {
+
     list-style: none;
-    background-color: red;
+}
 
-    &__item {
-        flex-grow: 1;
-        text-align: center;
-    }
+.navigation {
+    width: 40px;
+    height: 40px;
+    padding: 15px;
+}
 
-    &__link {
-        color: #fff;
-        text-decoration: none;
-        display: block;
-    }
+.navigation:hover>.navigation-item {
+    display: block;
+}
+
+img {
+    width: 40px;
+    height: 40px;
+}
+
+.img-item {
+    width: 60px;
+    height: 60px;
+
 }
