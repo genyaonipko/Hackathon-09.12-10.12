@@ -40,6 +40,7 @@ var serverConfig = {
     host: 'localhost',
     port: 9000,
     logPrefix: 'NASA',
+    browser: 'google chrome',
     notify: false
   };
 
