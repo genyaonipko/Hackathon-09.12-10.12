@@ -1,17 +1,37 @@
-.list {
+.back_desk {
+    background-color: black;
+    font-family: 'Roboto', sans-serif;
+};
+.box {
+    padding-top: 50px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
     display: flex;
-    justify-content: space-between;
-    list-style: none;
-    background-color: red;
-
-    &__item {
-        flex-grow: 1;
-        text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
+   };
+.box__technology{
+    height: 150px;
+    width: 100%;
+    text-align: center;
+     };
+.forum,.library  {
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+    width: 100px;
+    color: rgb(66, 66, 66);
+};
+.library:hover{
+    filter: drop-shadow(0px 0px 10px white);
+};
+.forum:hover{
+    filter: drop-shadow(0px 0px 10px white);
+};
+@media (max-width: 1024px) {
+    .box {
+        display: flex;
+        justify-content: flex-start;
     }
-
-    &__link {
-        color: #fff;
-        text-decoration: none;
-        display: block;
-    }
+        
 }
