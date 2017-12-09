@@ -88,11 +88,25 @@
     padding: 0px 20px;
     .post__title {
         @include font;
+        text-decoration: none;
+        color: #000000;
+        display: block;
         font-size: 21px;
         font-weight: 600;
+        &:hover {
+            color:#3EAEFF;
+        }
     }
     .post__quote {
         @include font;
         font-size: 18px;        
     }
+}
+.post::after {
+    content: " ";
+    height: 1px;
+    display: block;
+    width: 100%;
+    background-color: #D4D2D2;
+    margin-top: 20px;
 }
