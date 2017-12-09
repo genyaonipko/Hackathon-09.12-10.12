@@ -1,0 +1,42 @@
+.post-prewiev .post__title--current {
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    color: #000000;
+    display: block;
+    font-size: 21px;
+    background-color: #c8fffe;
+    font-weight: 600;
+}
+.name-user {
+    font-family: 'Roboto', sans-serif;
+
+}
+.user-mini-wrapper {
+    display: flex;
+    align-items: center;
+}
+.answer-button{
+    padding: 15px 20px;
+    color: #ffffff;
+    background-color: #000000;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+    &:hover {
+        color: #000000;
+        background-color: #3EAEFF;
+    }
+}
+.answer-title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 23px;
+    text-align: center;
+}
+#message {
+    width: 90%;
+    display: block;
+    margin: 0px auto;
+}
+.button-wrapper {
+    text-align: center;
+    padding: 20px 0px;
+}

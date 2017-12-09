@@ -104,9 +104,8 @@
 }
 .post::after {
     content: " ";
-    height: 1px;
+    border-bottom: 1px solid #D4D2D2;
     display: block;
     width: 100%;
-    background-color: #D4D2D2;
-    margin-top: 20px;
+    margin: 20px 0;
 }
