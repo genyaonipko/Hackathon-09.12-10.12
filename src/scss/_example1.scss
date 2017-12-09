@@ -1,0 +1,17 @@
+.list {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    background-color: red;
+
+    &__item {
+        flex-grow: 1;
+        text-align: center;
+    }
+
+    &__link {
+        color: #fff;
+        text-decoration: none;
+        display: block;
+    }
+}
