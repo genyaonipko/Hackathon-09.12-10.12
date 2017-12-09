@@ -1,2 +1,16 @@
-@import "example1";
-@import "example2";
+
+@media screen and (max-width:320px) {
+  .page__title {
+
+  }
+  .page {
+    margin-left: 20px;
+    &__button {
+      background: #fbf6f8;
+      border-radius: 7px;
+      border: 1px solid #d9d3d1;
+      padding: 5px;
+      margin: 30px;
+    }
+  }
+}
