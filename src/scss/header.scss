@@ -3,7 +3,7 @@ header .wrapper {
   display: flex;
   justify-content: space-around;
   margin: 0 auto;
-  margin-bottom: 60px;
+  margin-bottom: 160px;
   box-sizing: border-box;
 }
 
@@ -23,6 +23,7 @@ header .wrapper {
 
 .mainmenubtn:hover {
   color: #b97d09;
+
 }
 
 .dropdown {
@@ -31,9 +32,13 @@ header .wrapper {
 }
 .dropdown-child {
   display: none;
+  position: absolute;
+  z-index: 1;
   background-color: #3791d5;
   width: 113px;
   font: 10px/1 Arial, sans-serif;
+  transition-duration: 0.9s;
+  transition-timing-function: cubic-bezier(0.47, 0, 0.745, 0.715);
     a {
       color: white;
       padding: 10px;
@@ -45,6 +50,7 @@ header .wrapper {
 
 .dropdown:hover .dropdown-child {
   display: block;
+
 }
 
 .dropdown-child a:hover {
