@@ -1,0 +1,41 @@
+input:not([type="submit"]), input:not(.card-box) {
+    display: none;
+}
+
+.search-item__text {
+  display: block !important;
+}
+
+input+label {
+  font-size: 20px;
+  cursor: pointer;
+  padding-left: 28px;
+  position: relative;
+}
+
+input:checked+label {
+  color: #3b5998;
+  font-weight: bolder;
+}
+
+label:before {
+  content: "";
+  top: 4px;
+  left: 0;
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  background: #3b5998;
+  transition: all 0.3s ease;
+  box-shadow: inset 0 0 0 18px #E0E0E0;
+}
+
+label.menu-button:before{
+  background: #fff;
+  box-shadow: none;
+}
+
+input:checked + label:before {
+  border: 1px solid #3b5998;
+  box-shadow: inset 0 0 0 4px #fff;
+}
