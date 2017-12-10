@@ -4,7 +4,12 @@ main {
   padding: 0 20px;
   h2{
     margin-bottom: 15px;
-
+  }
+  hr{
+    width: 100%;
+    min-height: 5px;
+    background-color: #3193d0;
+    margin-bottom: 5px;
   }
   .favorites{
     display: flex;
@@ -12,9 +17,29 @@ main {
     list-style: none;
     .favorites__name{
       display: flex;
-      flex-direction: row;
       justify-content: space-between;
     }
-
+    ul {
+      display: flex;
+      justify-content: flex-end;
+      list-style: none;
+      margin-bottom: 15px;
+      li {
+        padding-right: 15px;
+        font-weight: bold;
+      }
+    }
+    button{
+        background-color: #feb018;
+        color: #fff;
+        font: 10px/1 Arial, sans-serif;
+        border: none;
+        cursor: pointer;
+        padding:10px;
+        border-radius: 10px;
+    }
+  p{
+    margin-bottom: 15px;
+  }
   }
 }
