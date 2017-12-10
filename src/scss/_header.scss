@@ -31,6 +31,10 @@
     padding: 10px;
     box-shadow: 0px 3px 5px #888888;
 
+    font-family: 'Roboto', sans-serif;
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 0px 3px 5px #888888;
     
     &__icon {
         height: 60px;
@@ -52,9 +56,10 @@
     top: 62px;
     display: none;
     flex-direction: column;
-    width: 50%;
+    width: 100%;
     font-size: 20px;
-    background-color: rgb(63, 63, 63);
+    background-color: #222222;
+    z-index: 10;
 
     &__item {
         padding: 10px;
@@ -77,25 +82,3 @@
     top: 19%;
     right: 5%;
 }
-
-.content-menu {
-    display: none;
-}
-
-// .list {
-//     display: flex;
-//     justify-content: space-between;
-//     list-style: none;
-//     background-color: red;
-
-//     &__item {
-//         flex-grow: 1;
-//         text-align: center;
-//     }
-
-//     &__link {
-//         color: #fff;
-//         text-decoration: none;
-//         display: block;
-//     }
-// }
