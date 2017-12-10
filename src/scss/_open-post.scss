@@ -4,12 +4,13 @@
     color: #000000;
     display: block;
     font-size: 21px;
-    background-color: #c8fffe;
+    // background-color: #c8fffe;
     font-weight: 600;
 }
 .name-user {
     font-family: 'Roboto', sans-serif;
-
+    font-size: 18px;
+    font-weight: 500;
 }
 .user-mini-wrapper {
     display: flex;
@@ -40,4 +41,33 @@
 .button-wrapper {
     text-align: center;
     padding: 20px 0px;
+}
+.rate {
+    width: 91px;
+}
+.star-empty {
+    width: 15px;
+    fill: #A9A9A9;
+}
+.star-filled {
+    @extend .star-empty;
+    fill: #F5CB05;
+}
+.post--question {
+    background-color: #EBEBEB;
+}
+.vote{
+    text-align: right;
+}
+.like-button{
+    width: 20px;
+    cursor: pointer;
+    margin: 5px 10px;
+    &:hover {
+        fill: #F5CB05;
+    }
+}
+.dislike-button {
+    @extend .like-button;
+    transform: rotate(180deg);
 }
