@@ -1,0 +1,50 @@
+.results {
+  padding: 15px;
+}
+
+.results>h2 {
+  margin-top: 10px;
+}
+
+h3 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.html5 {
+  margin-left: 10px;
+  color: greenyellow;
+  font-size: 20px;
+}
+
+.blocks {
+  margin-left: 10px;
+  color: orange;
+  font-size: 20px;
+}
+
+.result-1>span {
+  display: block;
+}
+
+span {
+  margin: 10px 0;
+}
+
+h2 {
+  font-size: 26px;
+}
+
+.mark {
+  display: none;
+  margin-left: 20px;
+  font-size: 30px;
+}
+
+.result-1>p:hover > .mark {
+  display: block;
+}
+
+.button {
+  display: block !important;
+}

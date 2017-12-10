@@ -1,2 +1,22 @@
-@import "example1";
-@import "example2";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import 'fa/fontawesome';
+@import 'variables';
+@import "menustyle";
+@import 'card-style';
+@import "testsstyle";
+@import "resultstyle";
+@import "themes";
+@import "remainder";
+@import "progress";
+@import "events";
+@import "english";
+@import "dictionary";
+@import "propositionstyle";
+@import "rating";
+@import "768px";
+@import "1024px";

@@ -1,0 +1,31 @@
+.wrapper-dictionary {
+  padding: 10px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.word-en {
+  width: 50vw;
+  font-size: 14px;
+  border-right: 2px solid silver;
+
+}
+
+.word-ru {
+  width: 50vw;
+  font-size: 14px;
+  margin-left: 5px;
+}
+
+h2 {
+  padding: 10px;
+}
+
+span {
+  display: block;
+}
+
+.input-en {
+  display: block !important;
+}

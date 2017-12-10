@@ -1,0 +1,45 @@
+.remainder {
+    left: 50%;
+    width: 270px;
+    position: fixed;
+    display: block;
+    z-index: 999;
+    background-color: lawngreen;
+    border: 2px solid #fff;
+    outline: 2px solid lawngreen;
+    transform: translate(-50%);
+    text-align: center;
+
+    h2 {
+        padding: 20px;
+        color: #fff;
+        font-size: 16px;
+        text-align: center;
+    }
+
+    a {
+        color: #fff;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    &-wrapper {
+        padding-bottom: 10px;
+        position: relative;
+    }
+
+    i {
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        color: grey;
+    }
+}
+
+@media all and (min-width: 720px) {
+    .remainder {
+        left: initial;
+        right: 50px;
+        transform: none;
+    }
+}
