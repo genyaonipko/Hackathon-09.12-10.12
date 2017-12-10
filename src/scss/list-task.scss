@@ -55,3 +55,71 @@ main .wrapper{
     }
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  main .wrapper{
+    padding: 0 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    h1{
+      width: 100%;
+    }
+    .list-block {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      .list-task {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        padding: 0 2%;
+        justify-content: space-between;
+        .button {
+          font: 15px/1 Arial, sans-serif;
+        }
+      }
+
+    }
+    button {
+      max-width: 300px;
+      margin-top: 50px;
+      font: 15px/1 Arial, sans-serif;
+    }
+  }
+}
+@media screen and (min-width: 1024px){
+  main .wrapper{
+    padding: 0 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    h1{
+      width: 100%;
+    }
+    .list-block {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      .list-task {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        padding: 0 2%;
+        justify-content: space-between;
+        .button {
+          font: 15px/1 Arial, sans-serif;
+        }
+        p{
+          font-size: 16px;
+        }
+      }
+
+    }
+    button {
+      max-width: 300px;
+      margin-top: 50px;
+      font: 15px/1 Arial, sans-serif;
+    }
+  }
+}
