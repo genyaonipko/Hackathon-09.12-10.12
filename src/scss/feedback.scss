@@ -4,9 +4,9 @@
     padding: 0 20px;
   }
   .page {
-    margin-left: 20px;
     &__title {
       font-family: Arial, sans-serif;
+      margin: 20px 0;
     }
     &__text {
       font: 15px Arial, sans-serif;
@@ -49,14 +49,21 @@
     margin-top:50px;
     margin-bottom: 50px;
   }
+  .content--none {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px){
+
  .wrapper {
    padding: 0 40px;
    margin: 0 auto;
  }
-
+  .block {
+    display: flex;
+    flex-direction: row;
+  }
   .page {
     &__title {
       font-family: Arial, sans-serif;
@@ -76,19 +83,30 @@
       margin-top:50px;
     }
     .page-content{
+      width: 50%;
       border-bottom: solid #3193d0;
       padding-bottom: 15px;
       margin-bottom: 15px;
     }
   }
+  .block--none {
+    display: flex;
+    flex-direction: row;
+  }
 }
 
 @media screen and (min-width: 1024px){
+
   .wrapper {
     padding: 0 40px;
     margin: 0 auto;
   }
 
+  .block {
+    display: flex;
+    flex-direction: row;
+  }
+
   .page {
     &__title {
       font-family: Arial, sans-serif;
@@ -112,5 +130,9 @@
       padding-bottom: 15px;
       margin-bottom: 15px;
     }
+  }
+  .block--none {
+    display: flex;
+    flex-direction: row;
   }
 }
