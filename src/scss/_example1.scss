@@ -20,7 +20,7 @@
     pointer-events: auto;
  }
 
-     & > div {
+     & > div{
     width: 360px;
     position: relative;
     margin: 10% auto;
@@ -54,3 +54,18 @@
 }
 
 .close:hover { background: #00d9ff; }
+
+input{
+    width:90%;
+
+
+
+}
+select{
+    width:90%;
+}
+
+.submit{
+    width:40%;
+    margin-left:25%;
+}
