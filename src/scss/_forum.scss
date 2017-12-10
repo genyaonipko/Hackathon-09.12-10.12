@@ -317,40 +317,34 @@
           .forum .forum__tab button {
     width: 99%;
         }
-
+}
 
 
 @media screen and (min-width:1024px){
          .forum__tab{
           margin-top:5%;
 
-         }
+            }
          .forum__button{
-           
-           width:30%;
-          
-
-
-         }
+            width:30%;
+                     }
          .modalDialog > div{
           width: 1000px;
           font-size:1em;
-        
              select{
               width:80%;
              }
              textarea{
               width:80%;
              }
-
-       }
+            }
        .forum-tabs__item{
           label{
             font-size:2em;
             padding-bottom:0;
           }
           
-       }
+          }
        .forum .forum__tab button{
 
         font-size:1.6em;
@@ -372,7 +366,7 @@
           left:36%;
       }
       .breadcrumb .breadcrumb__item a{
-        font-size: 0.8em;
+           font-size: 0.8em;
       }
       .forum-tabs .forum-tabs__item label {
           background: #eee;
@@ -386,8 +380,8 @@
           z-index:0;
       }
       .forum__counter {
-        margin-left:40%;
-        font-size:2em;
+          margin-left:40%;
+          font-size:2em;
       }
 
 }
