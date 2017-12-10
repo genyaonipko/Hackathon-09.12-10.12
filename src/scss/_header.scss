@@ -1,3 +1,14 @@
+@mixin link-color {
+        &:link {
+            color: #958d8d; 
+        }
+        &:visited {
+            color: white;
+        }
+        &:hover {
+            color: #958d8d;
+        }   
+}
 * {
     margin: 0;
     padding: 0;
@@ -63,6 +74,7 @@
     &__link {
         text-decoration: none;
         color: white;
+        @include link-color;
     }
 }
 
