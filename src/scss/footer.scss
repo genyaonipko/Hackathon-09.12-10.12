@@ -1,8 +1,14 @@
+footer .wrapper {
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
 .footer {
   display: block;
   box-sizing: border-box;
-  height: 100px;
+  min-height: 72px;
   background-color: #3193d0;
+  margin-top: 100px;
 }
 
 .footer ul {
