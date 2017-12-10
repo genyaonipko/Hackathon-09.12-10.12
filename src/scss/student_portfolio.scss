@@ -1,0 +1,164 @@
+.wrapper {
+  width: 100%;
+  min-width: 320px;
+  max-width:769px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.student, .company {
+  display: flex;
+  flex-direction: row;
+}
+
+.photo, .logo {
+  margin-right: 15px;
+}
+.name p {
+  padding: 0;
+  margin: 0;
+}
+.skills, .techologies {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5px;
+}
+
+.skill_f, .technology_f {
+  display: flex;
+  flex-direction: column;
+  border: solid #3193d0 1px;
+  border-radius: 3px;
+  width: 98%;
+  margin: auto;
+  padding: 5px;
+}
+
+.skill_f {
+  margin-bottom: 5px;
+}
+
+.skill, .technology {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+
+/*.skill_confirm, .technology_confirm {*/
+/*width: 60px;*/
+/*height: 20px;*/
+/*border: solid #3193d0 1px;*/
+/*border-radius: 3px;*/
+/*text-align: center;*/
+/*}*/
+
+.performed, .tasks {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.task {
+  border: solid #3193d0 1px;
+  border-radius: 3px;
+  margin-bottom: 5px;
+  padding: 5px;
+
+}
+
+.pattern_f, .task_head {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: auto;
+  width: 98%;
+}
+
+.pattern {
+  /*border: solid #3193d0 1px;*/
+  /*border-radius: 3px;*/
+  width: 62%;
+  height: auto;
+}
+
+h4 {
+  margin: 5px;
+}
+
+.add_pattern {
+  /*border: solid #3193d0 1px;*/
+  /*border-radius: 3px;*/
+  width: 36%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.specialisation {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.specialisation p {
+  border: solid #3193d0 1px;
+  border-radius: 3px;
+  width: 98%;
+  margin: auto;
+  padding: 5px;
+}
+
+.feedback {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.feedback p {
+  border: solid #3193d0 1px;
+  border-radius: 3px;
+  width: 98%;
+  margin: auto;
+  padding: 5px;
+}
+
+.control {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.button {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.button a {
+  display: block;
+  padding: 5px 20px;
+  text-decoration: none;
+  background: #feb018;
+  border-radius: 5px;
+  font: 12px/1 Arial, sans-serif;
+  color: #ffffff;
+}
+
+//.test {
+//  position: absolute;
+//  width: 90%;
+//  height: 90%;
+//  left: 5%;
+//  top: 5%;
+//}
+
+.question {
+  padding: 20px 0;
+  border-bottom: solid #3193d0 1px;
+}
+
+.test_confirm {
+  margin-top: 15px;
+}
