@@ -29,25 +29,35 @@
 				<div id="openModalQuestion" class="modalDialog">
 			        <div class="modalDialog__container">
 			                <a href="#close" title="Закрыть" class="close"><img src="img/close-cross.png" width="10"></a>
-			                <h4>Укажите  категорию</h4>
+			                <h4 class="modalDialog__header">Выберите категорию</h4>
 
-			        <select id="selecttheme" width="100">
+					        <select id="selecttheme" width="100" class="modal-select">
 
-			                <option value="Mar">HTML</option>
+					                <option value="HTML">HTML</option>
 
-			                <option value="Gre">CSS</option>
+					                <option value="CSS">CSS</option>
 
-			                <option value="Yel">JS</option>
+					                <option value="JS">JS</option>
 
-			                <option value="Blu">PHP</option>
+					                <option value="Git">Git</option>
 
-			                <option value="Red">Python</option>
+					                <option value="Gulp">Gulp</option>
 
-			        </select>
-			         <br>
-			                <h4>Задайте интересующий вопрос</h4>
-			                <label for="comment" ></label>
-			                <textarea class="form-control" rows="5" id="comment"></textarea>
+					                <option value="other">другое</option>
+
+					        </select>
+					         <br>
+					        <h4 class="modalDialog__header">Объясни проблему коротко</h4>
+					        <label for="question-header" ></label>
+					        <input type="text" name="question" placeholder="Заголовок вопроса.." class="form__input"> 
+
+					        <h4 class="modalDialog__header">Опиши подробно или вставь код</h4>
+					        <label for="comment" ></label>
+					        <textarea class="form__input" rows="5" id="comment"></textarea>
+
+					        <div class="modalDialog__button">
+					        	<a href="#" class="modalDialog__button__link">Отправить</a>
+					        </div>
 			    </div>
 			</div>
 
@@ -72,8 +82,8 @@
     			<a href="#close" title="Закрыть" class="close"><img src="img/close-cross.png" width="10"></a>
                 
 	         	<form class="search-form">
-	              <input type="text" name="search" placeholder="Search.." class="search-form__input"> 
-	              <button class="search-form__button">Search</button>
+	              <input type="text" name="search" placeholder="Search.." class="form__input"> 
+	              <button class="form__form-search__button">Search</button>
 	        	</form>
 			</div>
     	
@@ -95,38 +105,38 @@
 
         		<form action="/action_page.php">
         		
-	        		<h3>Пожалуйста, авторизируйтесь</h3>
+	        		<h3>Пожалуйста, зарегистрируйтесь</h3>
 	        		<br>
 	                
 	                <h4>Название курса:</h4>
 	                <select id="selecttheme" width="100">
 
-		                <option value="Mar">HTML</option>
+		                <option value="FE">FE</option>
 
-		                <option value="Gre">CSS</option>
+		                <option value="HTML">HTML/CSS</option>
 
-		                <option value="Yel">JS</option>
+		                <option value="QA">QA</option>
 
-		                <option value="Blu">PHP</option>
+		                <option value="Java">Java</option>
 
-		                <option value="Red">Python</option>
+		                <option value="Fullstack">Fullstack</option>
 
 	        		</select>
 	                
 
 	                <h4>Ваше имя:</h4>
-	                <input type="text" name="firstname">
+	                <input type="text" name="firstname" class="form__input">
 	                
 	                <h4>Фамилия:</h4>
-	                <input type="text" name="lastname">
+	                <input type="text" name="lastname" class="form__input">
 	                
 	                <h4>E-mail:</h4>
-	                  <input type="email" name="email">
+	                  <input type="email" name="email" class="form__input">
 	                 
 	                <h4>Ваш пароль:</h4>
-	                <input type="password" name="psw">
+	                <input type="password" name="psw" class="form__input">
 	                <br><br>
-	                <input type="submit" class="submit" value="Отправить вопрос">
+	                <input type="submit" class="submit" value="Отправить вопрос" class="form__input">
 
 				</form>
     		</div>
