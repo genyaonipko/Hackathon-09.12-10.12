@@ -10,7 +10,8 @@
             color: #958d8d;
         }   
 }
- // header
+
+// >>>>>>> header
 * {
     margin: 0;
     padding: 0;
@@ -43,20 +44,24 @@
     font-family: 'Roboto', sans-serif;
     border: 1px solid;
     padding: 10px;
-    box-shadow: 0px 3px 5px #888888;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.75);
     
     &__icon {
         height: 60px;
         width: 60px;
         
         &:hover>.main-menu {
-        display: flex;
-        }    
+            display: flex;
+        }   
     }
 
     &__link {
         width: 32px;
         height: 32px;
+
+        @media (min-width: 1024px) {
+            display: none;
+        } 
     }
 }
 
@@ -65,14 +70,20 @@
     top: 62px;
     display: none;
     flex-direction: column;
+    list-style-type: none;
     width: 100%;
     font-size: 20px;
     background-color: #222222;
-    z-index:10;
+    z-index: 10;
+
+        @media (min-width: 1024px) {
+                width: 75%;
+        }       
 
     &__item {
         padding: 10px;
     }
+
 
     &__link {
         text-decoration: none;
@@ -80,17 +91,65 @@
 
         @include link-color;
 
-    }
+
+        @media (min-width: 1024px) {
+
+            &:link {
+                color: black; 
+            }
+            &:visited {
+                color: black;
+            }
+            &:hover {
+                color: #958d8d;
+            }             
+        }    
+    }         
+
+    @media (min-width: 1024px) {
+        display: flex;
+        flex-direction: row;
+        color: black;
+        top: 7px;
+        background-color: white;
+    } 
+
 }
 
 .search {
     position: absolute;
     top: 19%;
-    right: 15%;
+    right: 10%;
 }
 
 .log-in {
     position: absolute;
     top: 19%;
-    right: 5%;
+    right: 0%;
+
+    &:hover>.log-in__menu{
+        display: flex;
+    }
+
+    &__menu {
+        position: absolute;
+        top: 49px;
+        left: -140px;
+        display: none;
+        flex-direction: column;
+        list-style-type: none;
+        background-color: black;
+    
+        &__item {
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        &__link {
+            text-decoration: none;
+            color: white;
+            padding: 10px;
+
+            @include link-color;
+        }
+    }
 }
