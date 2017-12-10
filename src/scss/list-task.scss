@@ -13,6 +13,7 @@ main {
     margin-bottom: 5px;
   }
   button{
+    width: 100%;
     background-color: #feb018;
     color: #fff;
     font: 10px/1 Arial, sans-serif;
@@ -21,12 +22,11 @@ main {
     padding:10px;
     margin-top:10px;
     border-radius: 10px;
-    width: 100%;
   }
-  .block{
+  .list-task{
     display: flex;
     flex-direction: column;
-    .block__name{
+    .list-task__name{
       display: flex;
       justify-content: space-between;
       margin-bottom: 10px;
@@ -45,8 +45,18 @@ main {
         font-weight: bold;
       }
     }
-    button{
-      max-width: 100px;
+    .button{
+      display: block;
+      background-color: #feb018;
+      color: #fff;
+      font: 10px/1 Arial, sans-serif;
+      border: none;
+      cursor: pointer;
+      padding:10px;
+      margin-top:10px;
+      border-radius: 10px;
+      max-width: 150px;
+      text-decoration: none;
     }
   }
 }
