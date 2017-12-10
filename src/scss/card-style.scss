@@ -1,12 +1,12 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
+
 // Variables
 $regal-blue: #034378;
 $san-juan: #2d4e68;
 $bermuda: #77d7b9;
 $white: #fff;
 $black: #000;
-$open-sans: 'Open Sans',
-sans-serif;
+$open-sans: 'Open Sans', sans-serif;
 // clear-fix mixin
 @mixin cf {
     &::before,
@@ -162,9 +162,20 @@ h1 {
     }
 }
 
+#html-card .wrapper{
+    background-image: url(../img/html.jpg);
+}
+
+#css-card .wrapper{
+    background-image: url(../img/css.jpg);
+}
+
+#js-card .wrapper {
+    background-image: url(../img/js.jpg);
+}
 .example-1 {
     .wrapper {
-        background: url(https://www.technowalkers.com/wp-content/uploads/2017/10/html.jpg) center / cover no-repeat;
+        background: center / cover no-repeat;
     }
 
     .content {

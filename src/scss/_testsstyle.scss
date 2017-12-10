@@ -5,7 +5,7 @@
 .category-item__description {
   margin-top: 20px;
   margin-bottom: 10px;
-  font-weight: bold;
+
 }
 
 .test-item {
@@ -25,4 +25,11 @@ label {
   background-color: #fff;
   float: right;
   margin: 20px;
+}
+
+.category-bottom_testButton {
+  display: block;
+  padding: 10px;
+  background-color: $regal-blue;
+  color: #fff;
 }

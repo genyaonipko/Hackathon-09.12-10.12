@@ -1,5 +1,9 @@
-input {
+input:not([type="submit"]), input:not(.card-box) {
     display: none;
+}
+
+.search-item__text {
+  display: block !important;
 }
 
 input+label {
@@ -24,6 +28,11 @@ label:before {
   background: #3b5998;
   transition: all 0.3s ease;
   box-shadow: inset 0 0 0 18px #E0E0E0;
+}
+
+label.menu-button:before{
+  background: #fff;
+  box-shadow: none;
 }
 
 input:checked + label:before {
