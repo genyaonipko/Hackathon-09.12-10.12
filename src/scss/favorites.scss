@@ -1,1 +1,20 @@
-@import
+main {
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 0 20px;
+  h2{
+    margin-bottom: 15px;
+
+  }
+  .favorites{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    .favorites__name{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+  }
+}
