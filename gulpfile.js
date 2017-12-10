@@ -35,7 +35,7 @@ var path = {
 var serverConfig = {
     server: {
       baseDir: './dist',
-      index: 'open-post.html'
+      index: 'user-cabinet.html'
     },
     host: 'localhost',
     port: 9000,
