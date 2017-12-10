@@ -5,26 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="import" href="/homework.html">
+    <link rel="import" href="/feedback.html">
     <title>Example</title>
 
 </head>
 <body>
-    <div class="wrapper">
-        <main class="page">
-            <h2 class="page__title">Обратная связь</h2>
-            <hr>
-            <h3 class="page__title">Ответ на задание</h3>
-            <p class="page__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad cumque error hic, id quae quam, quia quibusdam quisquam sapiente tempore ullam vitae voluptatem. Assumenda at consectetur dolore nemo officiis placeat?
-            </p>
-            <button class="page__button">Компания</button>
-            <button class="page__button">Удалить</button>
-            <hr>
-            <h3 class="page__title">Ответ на задание</h3>
-            <p class="page__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad cumque error hic, id quae quam, quia quibusdam quisquam sapiente tempore ullam vitae voluptatem. Assumenda at consectetur dolore nemo officiis placeat?
-            </p>
-            <button class="page__button">Компания</button>
-            <button class="page__button">Удалить</button>
-        </main>
-    </div>
+    <script>
+        var link = document.querySelector('link[rel=import]');
+        var content = link.import.querySelector('#feedback');
+        document.body.appendChild(content.cloneNode(true));
+    </script>
+    <script>
+        var link = document.querySelector('link[rel=import]');
+        var content = link.import.querySelector('#homework');
+        document.body.appendChild(content.cloneNode(true));
+    </script>
 </body>
 </html>
