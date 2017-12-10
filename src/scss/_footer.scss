@@ -1,0 +1,29 @@
+@mixin link-color {
+        &:link {
+            color: #958d8d; 
+        }
+        &:visited {
+            color: white;
+        }
+        &:hover {
+            color: #958d8d;
+        }   
+}
+.footer {
+    display: flex;
+    flex-direction: row;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: white;
+    background-color: black;
+    padding: 5px;
+}
+.footer-menu {
+    &__link {
+        list-style-type: none;
+        text-decoration: none;
+
+        @include link-color;
+
+    }
+}
