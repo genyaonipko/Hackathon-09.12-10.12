@@ -18,10 +18,17 @@
   padding: 0;
   margin: 0;
 }
+
+.skills_list{
+  display: flex;
+  flex-direction: row;
+}
+
 .skills, .techologies {
   display: flex;
   flex-direction: column;
-  margin-bottom: 5px;
+  margin: 5px;
+  width: 90%;
 }
 
 .skill_f, .technology_f {
@@ -161,4 +168,62 @@ h4 {
 
 .test_confirm {
   margin-top: 15px;
+}
+
+.cv {
+  display: flex;
+  flex-direction: row;
+}
+
+.cv_icon {
+  background: url("../img/cv.png") no-repeat;
+  background-size: contain;
+  width: 100px;
+  height: 120px;
+  margin-right: 15px;
+}
+
+.cv_icon_add {
+  background: url("../img/add_cv.png") no-repeat;
+  background-size: contain;
+  width: 100px;
+  height: 120px;
+}
+
+.tablet, .desctop {
+  display: none;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .tablet {
+    display: block;
+  }
+
+  .desctop {
+    display: none;
+  }
+
+  .skills, .techologies {
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    width: 43%;
+  }
+}
+
+
+
+@media screen and (min-width: 1024px) {
+
+  .tablet, .desctop {
+    display: block;
+  }
+
+  .skills, .techologies {
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    width: 32%;
+  }
+
 }
