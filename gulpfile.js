@@ -42,6 +42,7 @@ var serverConfig = {
     logPrefix: 'NASA',
     // browser: 'google chrome',
     notify: false
+    // notify: false
   };
 
   // html

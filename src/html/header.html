@@ -8,7 +8,7 @@
 		  
 		<div class="nav__icon">
 		  <a href="#" class="nav__link">
-		  	<img src="../img/menu.png" alt="menu">
+		  	<img src="img/menu.png" alt="menu">
 		  </a>	
 		  	<ul class="main-menu">
 			    <li class="main-menu__item">
@@ -24,7 +24,33 @@
 			      <a class="main-menu__link" href="#">Участники</a>
 			    </li>
 			    <li class="main-menu__item">
-			      <a class="main-menu__link" href="#">Задать вопрос</a>
+			      <a class="main-menu__link" href="#openModalQuestion">Помощь в домашке</a>
+
+				<div id="openModalQuestion" class="modalDialog">
+			        <div class="modalDialog__container">
+			                <a href="#close" title="Закрыть" class="close"><img src="img/close-cross.png" width="10"></a>
+			                <h4>Укажите  категорию</h4>
+
+			        <select id="selecttheme" width="100">
+
+			                <option value="Mar">HTML</option>
+
+			                <option value="Gre">CSS</option>
+
+			                <option value="Yel">JS</option>
+
+			                <option value="Blu">PHP</option>
+
+			                <option value="Red">Python</option>
+
+			        </select>
+			         <br>
+			                <h4>Задайте интересующий вопрос</h4>
+			                <label for="comment" ></label>
+			                <textarea class="form-control" rows="5" id="comment"></textarea>
+			    </div>
+			</div>
+
 			    </li>
 			    <li class="main-menu__item">
 			      <a class="main-menu__link" href="#">Войти</a>
@@ -35,16 +61,77 @@
 		</div>
 
 		<div class="search">
-			<a href="#" class="search__icon">
-				<img src="../img/search.png" alt="search">
+			<a href="#openModal" class="search__icon">
+				<img src="img/search.png" alt="search">
 			</a>
 		</div>
 
+		<div id="openModal" class="modalDialog">
+    
+  			<div class="modalDialog__container">
+    			<a href="#close" title="Закрыть" class="close"><img src="img/close-cross.png" width="10"></a>
+                
+	         	<form class="search-form">
+	              <input type="text" name="search" placeholder="Search.." class="search-form__input"> 
+	              <button class="search-form__button">Search</button>
+	        	</form>
+			</div>
+    	
+    	</div>
+
 		<div class="log-in">
-			<a href="#" class="log-in__icon">
-				<img src="../img/avatar.png" alt="Log in">
+			<a href="#openModalSearch" class="log-in__icon">
+				<img src="img/avatar.png" alt="Log in">
 			</a>
 		</div>
+
+		<div id="openModalSearch" class="modalDialog">
+
+            <div class="modalDialog__container">
+                <a href="#close" title="Закрыть" class="close">
+                	<img src="img/close-cross.png" width="10">
+                </a>
+               
+
+        		<form action="/action_page.php">
+        		
+	        		<h3>Пожалуйста, авторизируйтесь</h3>
+	        		<br>
+	                
+	                <h4>Название курса:</h4>
+	                <select id="selecttheme" width="100">
+
+		                <option value="Mar">HTML</option>
+
+		                <option value="Gre">CSS</option>
+
+		                <option value="Yel">JS</option>
+
+		                <option value="Blu">PHP</option>
+
+		                <option value="Red">Python</option>
+
+	        		</select>
+	                
+
+	                <h4>Ваше имя:</h4>
+	                <input type="text" name="firstname">
+	                
+	                <h4>Фамилия:</h4>
+	                <input type="text" name="lastname">
+	                
+	                <h4>E-mail:</h4>
+	                  <input type="email" name="email">
+	                 
+	                <h4>Ваш пароль:</h4>
+	                <input type="password" name="psw">
+	                <br><br>
+	                <input type="submit" class="submit" value="Отправить вопрос">
+
+				</form>
+    		</div>
+		</div>
+	
 	</nav>
 		
 </header>
