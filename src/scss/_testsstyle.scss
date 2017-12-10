@@ -3,9 +3,11 @@
 }
 
 .category-item__description {
-  margin-top: 20px;
-  margin-bottom: 10px;
+  margin: 5px 0 30px;
+}
 
+.test-item__question {
+  margin: 30px 0 5px;
 }
 
 .test-item {
@@ -25,11 +27,4 @@ label {
   background-color: #fff;
   float: right;
   margin: 20px;
-}
-
-.category-bottom_testButton {
-  display: block;
-  padding: 10px;
-  background-color: $regal-blue;
-  color: #fff;
 }

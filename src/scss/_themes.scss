@@ -5,6 +5,12 @@
     flex-wrap: wrap;
 }
 
+.themes_title {
+    padding: 20px 0;
+    margin: 0 20px;
+    border-bottom: 1px solid #000;
+}
+
 .themes-item {
     flex-shrink: 0;
     width: 90vw;
@@ -14,7 +20,7 @@
     text-transform: uppercase;
     letter-spacing: 2.5px;
     font-weight: 500;
-    margin: 10px 0;
+    margin: 20px auto;
     background-color: #fff;
     border: none;
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
@@ -22,8 +28,8 @@
     cursor: pointer;
 
     &:hover {
-        background-color: #ff5722;
-        box-shadow: 0px 15px 20px rgba(119, 29, 0, 0.73);
+        background-color: rgb(63, 81, 181);
+        box-shadow: 0px 15px 20px rgba(63, 81, 181, 0.73);
 
         a {
             color: #fff;

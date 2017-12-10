@@ -9,8 +9,8 @@ header {
     position: absolute;
     top: 0;
     width: 100vw;
-    height: 90vh;
-    background-color: white;
+    height: auto;
+    background-color: #fff;
     margin-left: -15px;
     z-index: 9;
 }
@@ -31,12 +31,12 @@ header {
 
 .navbar:hover > .navigation-item {
     display: block;
-    animation: bounce 0.5s ease;
+    animation: bounce 0.4s ease-out;
 }
 
 @keyframes bounce {
-    from {left: -200px}
-    to {left: 15px}
+    from {left: -100%}
+    to {left: 4%}
 }
 
 .logo {
@@ -50,16 +50,17 @@ img {
 }
 
 .navbar__button {
-    color: white;
+    color: #fff;
     margin: 5px;
     font-size: 26px
 }
 
 .navbar__button--1 {
     float: right;
-    color: grey;
+    color: #fff;
     font-size: 26px;
     margin: 20px;
+    transform: rotate(90deg);
 }
 
 .img-item {
@@ -67,13 +68,15 @@ img {
     width: 70px;
     height: 70px;
     position: relative;
-    top: 12px;
+    top: 10px;
+    margin-left: 10px;
 }
 
 .name {
     height: 60px;
     line-height: 30px;
     margin-left: 10px;
+    margin-bottom: 40px;
     display: inline-block;
     color: #757575;
 }
@@ -90,15 +93,13 @@ img {
 .topmenu-item {
     width: 200px;
     height: 30px;
-    padding: 20px 14px;
+    padding: 20px 15px;
     list-style: none;
 
 }
 
 .topmenu {
-    margin-left: 10px;
-    font-family: 'Arial', sans-serif;
-
+    font-family: 'Open Sans', sans-serif;
 }
 
 .topmenu-item__link {
@@ -115,10 +116,10 @@ img {
 .search-item {
     display: none;
     position: absolute;
+    animation: slidedown 0.4s ease-out;
     top: 0;
     right: 0;
     background-color: #3F51B5;
-    right: 10px;
     height: 70px;
     width: 100vw;
 }
@@ -128,7 +129,16 @@ img {
 }
 
 .search-item__text {
-    margin: 20px 60px;
-    width: 214px;
-    height: 25px;
+    margin: 15px auto;
+    width: 40%;
+    height: 40px;
+}
+
+.fa-dot-circle {
+    color: #3F51B5;
+}
+
+@keyframes slidedown {
+    from {top: -15%}
+    to {top: 0%}
 }
