@@ -28,20 +28,16 @@ section{
   h2 {
     margin-bottom: 15px;
   }
-  hr{
-    width: 100%;
-    min-height: 5px;
-    background-color: #3193d0;
-    margin-bottom: 5px;
-  }
   .task{
     margin-bottom: 20px;
+    border-top: #3193d0 solid;
   }
   .task__name{
       display: flex;
       width: 100%;
       flex-direction: row;
       justify-content: space-between;
+    margin-top: 10px;
       ul{
         display: flex;
         flex-direction: row;
