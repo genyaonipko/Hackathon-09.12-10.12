@@ -35,12 +35,12 @@ var path = {
 var serverConfig = {
     server: {
       baseDir: './dist',
-      index: 'index.html'
+      index: 'forum.html'
     },
     host: 'localhost',
     port: 9000,
     logPrefix: 'NASA',
-    browser: 'google chrome',
+    // browser: 'google chrome',
     notify: false
   };
 

@@ -1,0 +1,255 @@
+
+<artical>
+
+
+<ul class="breadcrumb">
+  <li class="breadcrumb__item"><a href="#">Home</a></li>
+  <li class="breadcrumb__item"><a href="#">Forum</a></li>
+  
+  <li class="breadcrumb__item">HTML</li>
+</ul>
+  
+</artical>
+
+<section>
+<div class = "forum">
+     <div class = "forum__tab">
+           <div class = forum__tab-item><button><img src="img/question-mark.png" width="20" height="20"> Все вопросы</button></div>
+           <div class = forum__tab-item><button><img src="img/new.png" width="20" height="20">  Новые</button></div>
+           <div class = forum__tab-item><button><img src="img/top.png" width="20" height="20"> Популярные</button></div>
+           <div class = forum__tab-item><button><img src="img/cup.png" width="20" height="20"> Конкурсные</button></div>
+     </div>
+     <button class="forum__button"><a href="#openModal">Задать Вопрос</a></button>
+
+
+
+
+<!--Modal Window-->
+
+<div id="openModal" class="modalDialog">
+            <div>
+                <a href="#close" title="Закрыть" class="close"><img src="img/delete.png" width="10"></a>
+                <h4>Укажите  категорию</h4>
+
+        <select id="selecttheme" width="100">
+
+                <option value="Mar">HTML</option>
+
+                <option value="Gre">CSS</option>
+
+                <option value="Yel">JS</option>
+
+                <option value="Blu">PHP</option>
+
+                <option value="Red">Python</option>
+
+        </select>
+         <br>
+                <h4>Задайте интересующий вопрос</h4>
+                <label for="comment" ></label>
+                <textarea class="form-control" rows="5" id="comment"></textarea>
+    </div>
+</div>
+
+
+</div>
+
+<!--ALL QUETIONS-->
+
+ <div class="forum-tabs">
+    
+   <div class="forum-tabs__item">
+       <input type="radio" id="tab-1" name="tab-group-1" checked>
+       <label for="tab-1">Все</label>
+       
+       <div class="forum-tabs__content">
+       <div class="forum__main-quetions">
+ 
+
+ <div class="forum__quitions">
+    
+     <img src="img/question-mark.png" width="20">
+     <a href="#" title="Вопрос"> Как использовать CSS-Grid? Можно ли использовать для создания галлереи?</a>
+       <div class="forum__login-user">
+           <img src="img/man.png" width="30" height="30">
+            <p>Lorem ipsum dolor sit amet, consectetur </p>
+       </div> 
+       <div class="forum__counter">
+            <p><img src="img/like.png" width="10" height="10"></p>
+            <p><img src="img/cup.png" width="10"  height="10"></p>
+       </div> 
+
+ </div>
+
+ <div class="forum__quitions">
+    
+     <img src="img/question-mark.png" width="20">
+     <a href="#" title="Вопрос"> Как использовать CSS-Grid? Можно ли использовать для создания галлереи?</a>
+       <div class="forum__login-user">
+           <img src="img/girl.png" width="30" height="30">
+            <p>Lorem ipsum dolor sit amet, consectetur </p>
+       </div> 
+       <div class="forum__counter">
+            <p><img src="img/like.png" width="10" height="10"></p>
+            <p><img src="img/cup.png" width="10"  height="10"></p>
+       </div> 
+
+ </div>
+
+ <div class="forum__quitions">
+    
+     <img src="img/question-mark.png" width="20">
+     <a href="#" title="Вопрос"> Как использовать CSS-Grid? Можно ли использовать для создания галлереи?</a>
+       <div class="forum__login-user">
+           <img src="img/girl.png" width="30" height="30">
+            <p>Lorem ipsum dolor sit amet, consectetur </p>
+       </div> 
+       <div class="forum__counter">
+            <p><img src="img/like.png" width="10" height="10"></p>
+            <p><img src="img/cup.png" width="10"  height="10"></p>
+       </div> 
+
+ </div>
+</div>
+
+           
+       </div> 
+   </div>
+    
+
+    <!--NEW QUETIONS-->
+   <div class="forum-tabs__item">
+       <input type="radio" id="tab-2" name="tab-group-1">
+       <label for="tab-2">Новые</label>
+       
+       <div class="forum-tabs__content" >
+           <div class="forum__quitions" id="new-content">
+    
+     <img src="img/new.png" width="20">
+     <a href="#" title="Вопрос"> Как использовать CSS-Grid? Можно ли использовать для создания галлереи?</a>
+       <div class="forum__login-user">
+           <img src="img/girl.png" width="30" height="30">
+            <p>Lorem ipsum dolor sit amet, consectetur </p>
+       </div> 
+       <div class="forum__counter">
+            <p><img src="img/like.png" width="10" height="10"></p>
+            <p><img src="img/cup.png" width="10"  height="10"></p>
+       </div> 
+
+ </div>
+
+ <div class="forum__quitions">
+    
+     <img src="img/new.png" width="20">
+     <a href="#" title="Вопрос"> Как использовать CSS-Grid? Можно ли использовать для создания галлереи?</a>
+       <div class="forum__login-user">
+           <img src="img/girl.png" width="30" height="30">
+            <p>Lorem ipsum dolor sit amet, consectetur </p>
+       </div> 
+       <div class="forum__counter">
+            <p><img src="img/like.png" width="10" height="10"></p>
+            <p><img src="img/cup.png" width="10"  height="10"></p>
+       </div> 
+
+ </div>
+           
+           <img src="http://placekitten.com/200/100">
+       </div> 
+   </div>
+
+    <!--POPULAR QUETIONS-->
+
+    <div class="forum-tabs__item">
+       <input type="radio" id="tab-3" name="tab-group-1">
+       <label for="tab-3">Популярные</label>
+     
+       <div class="forum-tabs__content">
+          <div class="forum__quitions" id="new-content">
+    
+                 <img src="img/top.png" width="20">
+                 <a href="#" title="Вопрос"> Как использовать CSS-Grid? Можно ли использовать для создания галлереи?</a>
+                   <div class="forum__login-user">
+                       <img src="img/student.png" width="30" height="30">
+                        <p>Lorem ipsum dolor sit amet, consectetur </p>
+                   </div> 
+                   <div class="forum__counter">
+                        <p><img src="img/like.png" width="10" height="10"></p>
+                        <p><img src="img/cup.png" width="10"  height="10"></p>
+                   </div> 
+
+            </div>
+
+
+         <div class="forum__quitions" id="new-content">
+            
+                 <img src="img/top.png" width="20">
+                 <a href="#" title="Вопрос"> Как использовать CSS-Grid? Можно ли использовать для создания галлереи?</a>
+                   <div class="forum__login-user">
+                       <img src="img/boy.png" width="30" height="30">
+                        <p>Lorem ipsum dolor sit amet, consectetur </p>
+                   </div> 
+                   <div class="forum__counter">
+                        <p><img src="img/like.png" width="10" height="10"></p>
+                        <p><img src="img/cup.png" width="10"  height="10"></p>
+        </div> 
+
+         </div>
+           
+           <img src="http://placedog.com/200/100">
+       </div> 
+   </div>
+
+<!--CONTEST QUETIONS-->
+   <div class="forum-tabs__item">
+       <input type="radio" id="tab-4" name="tab-group-1">
+       <label for="tab-4">Конкурс</label>
+
+
+     
+       <div class="forum-tabs__content">
+           <div class="forum__quitions">
+    
+                     <img src="img/cup.png" width="20">
+                     <a href="#" title="Вопрос"> Как использовать CSS-Grid? Можно ли использовать для создания галлереи?</a>
+                       <div class="forum__login-user">
+                           <img src="img/girl.png" width="30" height="30">
+                            <p>Lorem ipsum dolor sit amet, consectetur </p>
+                       </div> 
+                       <div class="forum__counter">
+                            <p><img src="img/like.png" width="10" height="10"></p>
+                            <p><img src="img/cup.png" width="10"  height="10"></p>
+                       </div> 
+
+              </div>
+
+              <div class="forum__quitions">
+    
+                     <img src="img/cup.png" width="20">
+                     <a href="#" title="Вопрос"> Как использовать CSS-Grid? Можно ли использовать для создания галлереи?</a>
+                       <div class="forum__login-user">
+                           <img src="img/man.png" width="30" height="30">
+                            <p>Lorem ipsum dolor sit amet, consectetur </p>
+                       </div> 
+                       <div class="forum__counter">
+                            <p><img src="img/like.png" width="10" height="10"></p>
+                            <p><img src="img/cup.png" width="10"  height="10"></p>
+                       </div> 
+
+              </div>
+
+
+
+           
+           <img src="http://placedog.com/200/100">
+       </div> 
+   </div>
+
+
+    
+</div>
+
+
+
+
+
+</section>        
