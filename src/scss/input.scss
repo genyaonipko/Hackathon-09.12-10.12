@@ -1,8 +1,8 @@
-input:not([type="submit"]), input:not(.card-box) {
+input, input:not(.card-box) {
     display: none;
 }
 
-.search-item__text {
+.search-item__text, input.button {
   display: block !important;
 }
 
