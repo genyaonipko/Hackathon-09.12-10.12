@@ -74,6 +74,43 @@ main .wrapper {
     }
   }
 }
+
+.networks h2 {
+  text-align: center;
+  margin-top: 50px;
+  padding: 10px;
+}
+.socials {
+  margin: auto;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  width: 100%;
+  max-width: 196px;
+  justify-content: space-around;
+  align-items: center;
+}
+.socials li>a{
+  display: inline-block;
+  width: 32px; height: 32px;
+  background-repeat: no-repeat;
+}
+.socials li>a:hover {
+  opacity: 0.5;
+}
+.bg_facebook{
+  background: url(../img/css_sprites.png) -10px -10px;
+}
+.bg_linkedin {
+  background: url(../img/css_sprites.png) -62px -10px;
+}
+.bg_google {
+  background: url(../img/css_sprites.png) -114px -10px;
+}
+.bg_github {
+  background: url(../img/css_sprites.png) -166px -10px;
+}
+
 @media screen and (min-width: 768px) and (max-width: 1023px){
   main .wrapper{
     padding: 0 40px;
