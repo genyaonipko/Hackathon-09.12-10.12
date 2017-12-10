@@ -42,3 +42,38 @@ main .wrapper {
   }
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  main .wrapper {
+    padding: 0 40px;
+    .favorites {
+      ul {
+        font-size: 26px;
+      }
+      button {
+        font: 18px/1 Arial, sans-serif;
+        margin-bottom: 20px;
+      }
+      p {
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1024px){
+  main .wrapper {
+    padding: 0 60px;
+    .favorites {
+      ul {
+        font-size: 28px;
+      }
+      button {
+        font: 24px/1 Arial, sans-serif;
+        margin-bottom: 30px;
+      }
+      p {
+        font-size: 20px;
+      }
+    }
+  }
+}
