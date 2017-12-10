@@ -47,5 +47,19 @@
         width: 100%;
         text-align: center;
      };
+     .box__technology > h1{
+         font-size: 60px;
+     }
+     .forum,.library {
+         margin-top: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 20px;
+    border-radius: 10px;
+    font-family: 'Roboto', sans-serif;
+    width: 200px;
+    color: rgb(66, 66, 66);
+    font-size: 30px;
+     }
     
 }
