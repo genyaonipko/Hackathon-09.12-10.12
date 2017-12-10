@@ -1,3 +1,16 @@
+
+@mixin link-color {
+        &:link {
+            color: #958d8d; 
+        }
+        &:visited {
+            color: white;
+        }
+        &:hover {
+            color: #958d8d;
+        }   
+}
+ // header
 * {
     margin: 0;
     padding: 0;
@@ -55,6 +68,7 @@
     width: 100%;
     font-size: 20px;
     background-color: #222222;
+    z-index:10;
 
     &__item {
         padding: 10px;
@@ -63,6 +77,9 @@
     &__link {
         text-decoration: none;
         color: white;
+
+        @include link-color;
+
     }
 }
 
