@@ -17,8 +17,10 @@ footer .wrapper {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  margin: 0 auto;
     li{
       padding:20px;
+      font: 15px Arial, sans-serif;
     }
     li a{
       text-decoration: none;
@@ -31,5 +33,29 @@ footer .wrapper {
     }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .footer {
+    min-height: 90px;
+  }
+
+  .footer ul {
+    li {
+      padding: 20px;
+      font: 25px Arial, sans-serif;
+    }
+  }
+}
 
 
+@media screen and (min-width: 1024px) {
+  .footer {
+    min-height: 100px;
+  }
+
+  .footer ul{
+      li {
+        padding: 20px;
+        font: 30px Arial, sans-serif;
+      }
+  }
+}
