@@ -24,7 +24,33 @@
 			      <a class="main-menu__link" href="#">Участники</a>
 			    </li>
 			    <li class="main-menu__item">
-			      <a class="main-menu__link" href="#">Помощь в домашке</a>
+			      <a class="main-menu__link" href="#openModalQuestion">Помощь в домашке</a>
+
+				<div id="openModalQuestion" class="modalDialog">
+			        <div class="modalDialog__container">
+			                <a href="#close" title="Закрыть" class="close"><img src="img/close-cross.png" width="10"></a>
+			                <h4>Укажите  категорию</h4>
+
+			        <select id="selecttheme" width="100">
+
+			                <option value="Mar">HTML</option>
+
+			                <option value="Gre">CSS</option>
+
+			                <option value="Yel">JS</option>
+
+			                <option value="Blu">PHP</option>
+
+			                <option value="Red">Python</option>
+
+			        </select>
+			         <br>
+			                <h4>Задайте интересующий вопрос</h4>
+			                <label for="comment" ></label>
+			                <textarea class="form-control" rows="5" id="comment"></textarea>
+			    </div>
+			</div>
+
 			    </li>
 			    <li class="main-menu__item">
 			      <a class="main-menu__link" href="#">Войти</a>
