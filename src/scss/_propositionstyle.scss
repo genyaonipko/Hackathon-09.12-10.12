@@ -1,0 +1,24 @@
+.input-en {
+  height: 100px;
+  padding-left: 20px;
+}
+
+
+.wrapper-dictionary__propose{
+  padding: 10px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.wrapper-dictionary__propose > .word-en {
+  border: none;
+}
+
+#input-button {
+  display: block;
+  margin: 40px auto;
+  padding: 20px;
+
+}
+
