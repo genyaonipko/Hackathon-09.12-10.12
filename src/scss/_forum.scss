@@ -376,19 +376,20 @@
           top: -50px;
           -webkit-transition: background-color .17s linear;
       }
-      [type=radio]:checked ~ label {
-          z-index:0;
-      }
+      // [type=radio]:checked ~ label {
+      //     z-index:0;
+      // }
       .forum__counter {
           margin-left:40%;
           font-size:2em;
       }
      .forum__quitions .forum__login-user {
    
-    margin-left: 50%;
-}
-.forum__quitions .forum__counter p {
-    font-size: .5em;
-    margin-right: 7%;
-}
+          margin-left: 50%;
+      }
+      .forum__quitions .forum__counter p {
+          font-size: .5em;
+          margin-right: 7%;
+      }
+
 }
