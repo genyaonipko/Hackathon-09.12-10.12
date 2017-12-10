@@ -42,8 +42,7 @@
     font-family: 'Roboto', sans-serif;
     border: 1px solid;
     padding: 10px;
-    box-shadow: 0px 3px 5px #888888;
-
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.75);
     
     &__icon {
         height: 60px;
@@ -76,7 +75,7 @@
     z-index: 10;
 
         @media (min-width: 1024px) {
-                width: 80%;
+                width: 75%;
         }       
 
     &__item {
@@ -115,11 +114,37 @@
 .search {
     position: absolute;
     top: 19%;
-    right: 15%;
+    right: 10%;
 }
 
 .log-in {
     position: absolute;
     top: 19%;
-    right: 5%;
+    right: 0%;
+
+    &:hover>.log-in__menu{
+        display: flex;
+    }
+
+    &__menu {
+        position: absolute;
+        top: 49px;
+        left: -140px;
+        display: none;
+        flex-direction: column;
+        list-style-type: none;
+        background-color: black;
+    
+        &__item {
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        &__link {
+            text-decoration: none;
+            color: white;
+            padding: 10px;
+
+            @include link-color;
+        }
+    }
 }
