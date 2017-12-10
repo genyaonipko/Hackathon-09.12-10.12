@@ -1,0 +1,131 @@
+main .wrapper {
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 0 20px;
+  min-width: 320px;
+  h1{
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+  }
+  .favorites{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+
+    .favorites__name{
+      display: flex;
+      justify-content: space-between;
+      border-top: #3193d0 solid;
+    }
+    ul {
+      display: flex;
+      justify-content: flex-end;
+      list-style: none;
+      margin-bottom: 15px;
+      margin-top: 10px;
+      li {
+        padding-right: 15px;
+        font-weight: bold;
+      }
+    }
+    button{
+        background-color: #feb018;
+        color: #fff;
+        font: 10px/1 Arial, sans-serif;
+        border: none;
+        cursor: pointer;
+        padding:10px;
+        border-radius: 10px;
+        margin-top: 10px;
+    }
+  p{
+    margin-bottom: 15px;
+  }
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  main .wrapper {
+    padding: 0 40px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    h1 {
+      max-width: 100%;
+    }
+    .favorites-block {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      .favorites {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 50%;
+        padding: 0 2%;
+
+        ul {
+          font-size: 26px;
+        }
+        button {
+          font: 18px/1 Arial, sans-serif;
+          margin-bottom: 20px;
+        }
+        p {
+          font-size: 18px;
+        }
+        .favorites__name {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          padding-top: 25px;
+          button {
+            max-width: 180px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1024px){
+  main .wrapper {
+    padding: 0 60px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    h1 {
+      max-width: 100%;
+    }
+    .favorites-block {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      .favorites {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        padding: 0 2%;
+
+        ul {
+          font-size: 26px;
+        }
+        button {
+          font: 18px/1 Arial, sans-serif;
+          margin-bottom: 20px;
+        }
+        p {
+          font-size: 18px;
+        }
+        .favorites__name {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          padding-top: 25px;
+          button {
+            max-width: 180px;
+          }
+        }
+      }
+    }
+  }
+}
