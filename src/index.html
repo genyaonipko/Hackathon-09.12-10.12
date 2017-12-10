@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="import" href="/homework.html">
     <link rel="import" href="/feedback.html">
+    <link rel="import" href="/performers.html">
     <title>Example</title>
 
 </head>
@@ -19,6 +20,11 @@
     <script>
         var link = document.querySelector('link[rel=import]');
         var content = link.import.querySelector('#homework');
+        document.body.appendChild(content.cloneNode(true));
+    </script>
+    <script>
+        var link = document.querySelector('link[rel=import]');
+        var content = link.import.querySelector('#performers');
         document.body.appendChild(content.cloneNode(true));
     </script>
 </body>
