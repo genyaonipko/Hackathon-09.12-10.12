@@ -1,0 +1,19 @@
+@media all and (min-width: 768px) {
+    .navigation-item {
+        width: 50vw;
+    }
+
+    .card {
+        width: 50%;
+        margin: 50px auto;
+    }
+
+    .themes-main {
+        justify-content: space-around;
+    }
+
+    .themes-item {
+        width: 45vw;
+    }
+}
+
