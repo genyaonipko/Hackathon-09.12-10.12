@@ -1,0 +1,35 @@
+#button-1 {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+}
+
+label::before {
+  display: none;
+}
+
+.category-item__en--1 {
+  display: inline-block;
+ }
+
+.category-item__en--2 {
+  display: inline-block;
+}
+
+.label-en {
+  padding-left: 5px;
+}
+
+.test-item-1 {
+
+  font-size: 15px;
+  margin-left: 5px;
+  margin-bottom: 10px;
+}
+
+.test-item-2 {
+  display: flex;
+  align-items: stretch;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
