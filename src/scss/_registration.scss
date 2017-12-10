@@ -4,7 +4,7 @@ header{
     max-width: 320px;
   }
 }
-main {
+main .wrapper {
   margin: 0 auto;
   box-sizing: border-box;
   padding: 0 20px;
@@ -15,6 +15,8 @@ main {
       margin-bottom: 15px;
       input{
         width: 100%;
+        margin-bottom: 10px;
+        font-size: 14px;
       }
     }
     .entering-buttons{
@@ -70,5 +72,76 @@ main {
         }
       }
     }
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px){
+  main .wrapper{
+    padding: 0 40px;
+    .entering{
+      margin: auto;
+      max-width: 400px;
+      font-size: 24px;
+      .entering-form{
+        margin-bottom: 20px;
+        input{
+          font-size: 18px;
+        }
+      }
+      .entering-buttons{
+        display: flex;
+        .entering-buttons__login{
+          display: flex;
+          a{
+            font-size: 16px;
+          }
+        }
+        .entering-buttons__registration{
+          display: flex;
+          form{
+            font-size: 16px;
+          }
+          a{
+            font-size: 14px;
+          }
+        }
+      }
+    }
+
+  }
+}
+@media screen and (min-width: 1024px) {
+  main .wrapper{
+    padding: 0 60px;
+    .entering{
+      margin: auto;
+      max-width: 600px;
+      font-size: 24px;
+      .entering-form{
+        margin-bottom: 30px;
+        input{
+          font-size: 18px;
+          margin-top: 20px;
+        }
+      }
+      .entering-buttons{
+        display: flex;
+        .entering-buttons__login{
+          display: flex;
+          a{
+            font-size: 20px;
+          }
+        }
+        .entering-buttons__registration{
+          display: flex;
+          form{
+            font-size: 20px;
+          }
+          a{
+            font-size: 18px;
+          }
+        }
+      }
+    }
+
   }
 }
