@@ -52,7 +52,7 @@ section{
           font-weight: bold;
         }
       }
-      button{
+      .button{
         background-color: #feb018;
         color: #fff;
         font: 10px/1 Arial, sans-serif;
@@ -61,6 +61,7 @@ section{
         padding:10px;
         margin-top:10px;
         border-radius: 10px;
+        text-decoration: none;
       }
   }
 }
