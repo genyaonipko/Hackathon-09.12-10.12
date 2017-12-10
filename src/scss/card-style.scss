@@ -162,6 +162,15 @@ h1 {
     }
 }
 
+.article-title {
+    line-height: 30px;
+    margin-bottom: 10px;
+}
+
+.article-link {
+    padding-right: 100%;
+}
+
 #html-card .wrapper{
     background-image: url(../img/html.jpg);
 }
@@ -172,6 +181,7 @@ h1 {
 
 #js-card .wrapper {
     background-image: url(../img/js.jpg);
+    filter: blur(2px);
 }
 .example-1 {
     .wrapper {
@@ -233,7 +243,7 @@ h1 {
         li {
             width: 33.333333%;
             float: left;
-            background-color: $bermuda;
+            background-color: #3F51B5;
             height: 60px;
             position: relative;
         }
@@ -245,7 +255,7 @@ h1 {
             font-size: 24px;
         }
         span {
-            top: -10px;
+            top: -20px;
         }
     }
 
@@ -261,7 +271,7 @@ h1 {
         li {
             width: 33.333333%;
             float: left;
-            background-color: $bermuda;
+            background-color: #3F51B5;
             height: 60px;
             position: relative;
         }
@@ -273,7 +283,7 @@ h1 {
             font-size: 24px;
         }
         span {
-            top: -10px;
+            top: -20px;
         }
     }
 
@@ -289,7 +299,7 @@ h1 {
         li {
             width: 33.333333%;
             float: left;
-            background-color: $bermuda;
+            background-color: #3F51B5;
             height: 60px;
             position: relative;
         }
@@ -301,7 +311,7 @@ h1 {
             font-size: 24px;
         }
         span {
-            top: -10px;
+            top: -20px;
         }
     }
 }
