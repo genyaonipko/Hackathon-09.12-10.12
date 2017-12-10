@@ -24,7 +24,43 @@
 			      <a class="main-menu__link" href="#">Участники</a>
 			    </li>
 			    <li class="main-menu__item">
-			      <a class="main-menu__link" href="#">Задать вопрос</a>
+			      <a class="main-menu__link" href="#openModalQuestion">Помощь в домашке</a>
+
+				<div id="openModalQuestion" class="modalDialog">
+			        <div class="modalDialog__container">
+			                <a href="#close" title="Закрыть" class="close"><img src="img/close-cross.png" width="10"></a>
+			                <h4 class="modalDialog__header">Выберите категорию</h4>
+
+					        <select id="selecttheme" width="100" class="modal-select">
+
+					                <option value="HTML">HTML</option>
+
+					                <option value="CSS">CSS</option>
+
+					                <option value="JS">JS</option>
+
+					                <option value="Git">Git</option>
+
+					                <option value="Gulp">Gulp</option>
+
+					                <option value="other">другое</option>
+
+					        </select>
+					         <br>
+					        <h4 class="modalDialog__header">Объясни проблему коротко</h4>
+					        <label for="question-header" ></label>
+					        <input type="text" name="question" placeholder="Заголовок вопроса.." class="form__input"> 
+
+					        <h4 class="modalDialog__header">Опиши подробно или вставь код</h4>
+					        <label for="comment" ></label>
+					        <textarea class="form__input" rows="5" id="comment"></textarea>
+
+					        <div class="modalDialog__button">
+					        	<a href="#" class="modalDialog__button__link">Отправить</a>
+					        </div>
+			    </div>
+			</div>
+
 			    </li>
 			    <li class="main-menu__item">
 			      <a class="main-menu__link" href="#">Войти</a>
@@ -35,16 +71,77 @@
 		</div>
 
 		<div class="search">
-			<a href="#" class="search__icon">
+			<a href="#openModal" class="search__icon">
 				<img src="img/search.png" alt="search">
 			</a>
 		</div>
 
+		<div id="openModal" class="modalDialog">
+    
+  			<div class="modalDialog__container">
+    			<a href="#close" title="Закрыть" class="close"><img src="img/close-cross.png" width="10"></a>
+                
+	         	<form class="search-form">
+	              <input type="text" name="search" placeholder="Search.." class="form__input"> 
+	              <button class="form__form-search__button">Search</button>
+	        	</form>
+			</div>
+    	
+    	</div>
+
 		<div class="log-in">
-			<a href="#" class="log-in__icon">
+			<a href="#openModalSearch" class="log-in__icon">
 				<img src="img/avatar.png" alt="Log in">
 			</a>
 		</div>
+
+		<div id="openModalSearch" class="modalDialog">
+
+            <div class="modalDialog__container">
+                <a href="#close" title="Закрыть" class="close">
+                	<img src="img/close-cross.png" width="10">
+                </a>
+               
+
+        		<form action="/action_page.php">
+        		
+	        		<h3>Пожалуйста, зарегистрируйтесь</h3>
+	        		<br>
+	                
+	                <h4>Название курса:</h4>
+	                <select id="selecttheme" width="100">
+
+		                <option value="FE">FE</option>
+
+		                <option value="HTML">HTML/CSS</option>
+
+		                <option value="QA">QA</option>
+
+		                <option value="Java">Java</option>
+
+		                <option value="Fullstack">Fullstack</option>
+
+	        		</select>
+	                
+
+	                <h4>Ваше имя:</h4>
+	                <input type="text" name="firstname" class="form__input">
+	                
+	                <h4>Фамилия:</h4>
+	                <input type="text" name="lastname" class="form__input">
+	                
+	                <h4>E-mail:</h4>
+	                  <input type="email" name="email" class="form__input">
+	                 
+	                <h4>Ваш пароль:</h4>
+	                <input type="password" name="psw" class="form__input">
+	                <br><br>
+	                <input type="submit" class="submit" value="Отправить вопрос" class="form__input">
+
+				</form>
+    		</div>
+		</div>
+	
 	</nav>
 		
 </header>

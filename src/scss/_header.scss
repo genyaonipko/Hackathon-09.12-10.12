@@ -1,3 +1,15 @@
+@mixin link-color {
+        &:link {
+            color: #958d8d; 
+        }
+        &:visited {
+            color: white;
+        }
+        &:hover {
+            color: #958d8d;
+        }   
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -27,23 +39,27 @@
     position: relative;
     background-color: white;
     height: 40px;
+    font-family: 'Roboto', sans-serif;
     border: 1px solid;
     padding: 10px;
     box-shadow: 0px 3px 5px #888888;
-
     
     &__icon {
         height: 60px;
         width: 60px;
         
         &:hover>.main-menu {
-        display: flex;
-        }    
+            display: flex;
+        }   
     }
 
     &__link {
         width: 32px;
         height: 32px;
+
+        @media (min-width: 1024px) {
+            display: none;
+        } 
     }
 }
 
@@ -52,18 +68,47 @@
     top: 62px;
     display: none;
     flex-direction: column;
-    width: 50%;
+    list-style-type: none;
+    width: 100%;
     font-size: 20px;
-    background-color: rgb(63, 63, 63);
+    background-color: #222222;
+    z-index: 10;
+
+        @media (min-width: 1024px) {
+                width: 80%;
+        }       
 
     &__item {
         padding: 10px;
     }
 
+
     &__link {
         text-decoration: none;
         color: white;
-    }
+        @include link-color;
+
+        @media (min-width: 1024px) {
+
+            &:link {
+                color: black; 
+            }
+            &:visited {
+                color: black;
+            }
+            &:hover {
+                color: #958d8d;
+            }             
+        }    
+    }         
+
+    @media (min-width: 1024px) {
+        display: flex;
+        flex-direction: row;
+        color: black;
+        top: 7px;
+        background-color: white;
+    } 
 }
 
 .search {
@@ -77,25 +122,3 @@
     top: 19%;
     right: 5%;
 }
-
-.content-menu {
-    display: none;
-}
-
-// .list {
-//     display: flex;
-//     justify-content: space-between;
-//     list-style: none;
-//     background-color: red;
-
-//     &__item {
-//         flex-grow: 1;
-//         text-align: center;
-//     }
-
-//     &__link {
-//         color: #fff;
-//         text-decoration: none;
-//         display: block;
-//     }
-// }
