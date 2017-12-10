@@ -6,12 +6,6 @@ main {
   h1{
     margin-bottom: 15px;
   }
-  hr{
-    width: 100%;
-    min-height: 5px;
-    background-color: #3193d0;
-    margin-bottom: 5px;
-  }
   button{
     width: 100%;
     background-color: #feb018;
@@ -30,6 +24,7 @@ main {
       display: flex;
       justify-content: space-between;
       margin-bottom: 10px;
+      border-top: #3193d0 solid;
     }
     p{
       font-size: 12px;
